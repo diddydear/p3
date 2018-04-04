@@ -12,46 +12,50 @@
 @section('content')
     <div><h1 class="text-info">Find Friends Nearby </h1>
         Hi, welcome to friendfinder app. This app helps you locate your friends close to you. Check it out!<br>
-        Search for Friends close by - Abuja, Benue, Lagos, Niger, Rivers</div>
+        Search for Friends close by - Abuja, Benue, Lagos, Niger, Rivers
+    </div>
 
 
-<div>
-    <form @if($searchMe) class="col-md-3 row" @else class="col-md-6 row" @endif method='GET' action='/friends/search'>
-        <div class="form-group">
-            <label for="formGroupExampleInput">Location</label>
-            <input type="text"
-                   name='searchMe'
-                   placeholder='Enter Location'
-                   value='{{ $searchMe }}'
-                   class="form-control"
-                   id="formGroupExampleInput"
-                  >
-        </div>
+    <div>
+        <form @if($searchMe) class="col-md-3 row"
+              @else class="col-md-6 row"
+              @endif method='GET'
+              action='/friends/search'>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Location</label>
+                <input type="text"
+                       name='searchMe'
+                       placeholder='Enter Location'
+                       value='{{ $searchMe }}'
+                       class="form-control"
+                       id="formGroupExampleInput"
+                >
+            </div>
 
 
-        <div class="form-group">
-            <label for="showData">Friend's Info</label>
-            <select  name='showData' id='showData' class="form-control">
-                <option>I Just want a summary</option>
-                <option selected>Show me friends Info</option>
-            </select>
-        </div>
+            <div class="form-group">
+                <label for="showData">Friend's Info</label>
+                <select name='showData' id='showData' class="form-control">
+                    <option>I Just want a summary</option>
+                    <option selected>Show me friends Info</option>
+                </select>
+            </div>
 
-        <div class="form-check form-group">
-            <input class="form-check-input fixCheckPadding"
-                   name='loadMap'
-                   type="checkbox" {{ ($loadMap) ? 'CHECKED' : '' }}>
-            <label class="form-check-label">
-                Load Location Map
-            </label>
+            <div class="form-check form-group">
+                <input class="form-check-input fixCheckPadding"
+                       name='loadMap'
+                       type="checkbox" {{ ($loadMap) ? 'CHECKED' : '' }}>
+                <label class="form-check-label">
+                    Load Location Map
+                </label>
 
-            <input type='submit' name='submit' value='Search Friend' class='form-control btn btn-info'>
-        </div>
+                <input type='submit' name='submit' value='Search Friend' class='form-control btn btn-info'>
+            </div>
 
 
-    </form>
+        </form>
 
-</div>
+    </div>
 
 
 

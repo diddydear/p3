@@ -10,28 +10,28 @@
 @endpush
 
 @section('content')
-    <h1 class="text-info">Find Friends Nearby </h1>
-    Search for Friends close by - Abuja, Benue, Lagos, Niger, Rivers
+    <div><h1 class="text-info">Find Friends Nearby </h1>
+    Search for Friends close by - Abuja, Benue, Lagos, Niger, Rivers</div>
 
 
-    <p>
+<div>
     <form @if($searchMe) class="col-md-3 row" @else class="col-md-6 row" @endif method='GET' action='/friends/search'>
         <div class="form-group">
             <label for="formGroupExampleInput">Location</label>
             <input type="text"
                    name='searchMe'
                    placeholder='Enter Location'
-                   value='{{ $searchMe}}'
+                   value='{{ $searchMe }}'
                    class="form-control"
                    id="formGroupExampleInput"
-                   placeholder="Location">
+                  >
         </div>
 
 
         <div class="form-group">
-            <label for="inputState">Friend's Info</label>
-            <select id="inputState" name='showData' id='showData' class="form-control">
-                <option selected>I Just want a summary</option>
+            <label for="showData">Friend's Info</label>
+            <select  name='showData' id='showData' class="form-control">
+                <option>I Just want a summary</option>
                 <option selected>Show me friends Info</option>
             </select>
         </div>
@@ -40,7 +40,7 @@
             <input class="form-check-input fixCheckPadding"
                    name='loadMap'
                    type="checkbox" {{ ($loadMap) ? 'CHECKED' : '' }}>
-            <label class="form-check-label" for="defaultCheck1">
+            <label class="form-check-label">
                 Load Location Map
             </label>
 
@@ -50,8 +50,8 @@
 
     </form>
 
+</div>
 
-    </p>
 
 
 

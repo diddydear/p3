@@ -11,7 +11,8 @@
 
 @section('content')
     <div><h1 class="text-info">Find Friends Nearby </h1>
-    Search for Friends close by - Abuja, Benue, Lagos, Niger, Rivers</div>
+        Hi, welcome to friendfinder app. This app helps you locate your friends close to you. Check it out!<br>
+        Search for Friends close by - Abuja, Benue, Lagos, Niger, Rivers</div>
 
 
 <div>

@@ -1,0 +1,37 @@
+{
+	"Fransic Donga": {
+		"id": 0,
+		"state": "Lagos",
+		"area": "Mile2",
+		"hobby": "Reading",
+		"display_pic": "images/fransic.jpg"
+	},
+	"Geoffrey John": {
+		"id": 1,
+		"state": "Abuja",
+		"area": "Wuse2",
+		"hobby": "Computing",
+		"display_pic": "images/geoffrey.jpg"
+	},
+	"Mary Williams": {
+		"id": 2,
+		"state": "Lagos",
+		"area": "Costain",
+		"hobby": "Cooking",
+		"display_pic": "images/mary.jpg"
+	},
+	"Rose Magram": {
+		"id": 3,
+		"state": "Lagos",
+		"area": "Mile2",
+		"hobby": "Making Friends",
+		"display_pic": "images/rose.jpg"
+	},
+	"Sam Jay": {
+		"id": 4,
+		"state": "Abuja",
+		"area": "Zone3",
+		"hobby": "Gaming",
+		"display_pic": "images/sam.jpg"
+	}
+}

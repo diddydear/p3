@@ -1,0 +1,29 @@
+#logo {
+    /* Actual width is 632; displaying at half-size for retina screens */
+    width: 270px;
+}
+
+h1 {
+    font-family: "Helvetica", sans-serif;
+}
+
+.box {
+	padding: 20px;
+	margin-bottom:40px;
+	border-bottom: 1px solid #CACAFF;
+    background-color: #EFEFEF;
+}
+
+.footer {
+	padding: 20px;
+	margin-top:40px;
+	border-top: 1px solid #CACAFF;
+    background-color: #EFEFEF;
+  text-align: center;
+}
+.minHeight {
+	min-height: 300px;
+}
+.imgMaxHeight {
+	max-height: 200px;
+}
